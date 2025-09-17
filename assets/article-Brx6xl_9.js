@@ -2,6 +2,7 @@ const r=`---\r
 title: '我的第er篇日记'\r
 date: '2025-09-16'\r
 tags: ['生活', '编码', 'Vue']\r
+snippet: '1234'\r
 ---\r
 \r
 # Vue 学习之旅的开始\r

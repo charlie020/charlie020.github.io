@@ -1,0 +1,12 @@
+{
+  "life": {
+    "name": "生活点滴",
+    "description": "记录生活中的美好瞬间、感悟与思考。",
+    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z'/></svg>"
+  },
+  "study": {
+    "name": "学习笔记",
+    "description": "关于编程、技术和新知识的探索与总结。",
+    "icon": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M21.5 12.5L12 22L2.5 12.5L12 3L21.5 12.5Z'/></svg>"
+  }
+}

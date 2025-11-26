@@ -1,4 +1,4 @@
----
+const n=`---
 title: 'Git开发（入门）'
 date: '2025-09-20'
 tags: ['学习', '开发', 'Git']
@@ -36,9 +36,9 @@ imageUrl: '/articles/study/2025-09-20/创建pr完成.png'
 
     输入 git clone ，然后右键选择paste粘贴刚刚复制的git仓库地址，最后的完整命令为：
 
-    ```
+    \`\`\`
     git clone https://github.com/XXX/XXX.git
-    ```
+    \`\`\`
 
     按下回车进行克隆，克隆完成后，会在当前目录出现与仓库同名的文件夹，里面已是完整的 Git 仓库，后续所有操作都基于它。
 
@@ -62,9 +62,9 @@ imageUrl: '/articles/study/2025-09-20/创建pr完成.png'
     </div>
 
     输入：
-    ```
+    \`\`\`
     git checkout -b task1
-    ```
+    \`\`\`
     
     其中checkout是切换，-b表示如果不存在名为task1的分支，则创建并切换。
 
@@ -85,17 +85,17 @@ imageUrl: '/articles/study/2025-09-20/创建pr完成.png'
 </div>
 
 4. **把改动加入暂存区（二选一）**
-    ```
+    \`\`\`
     git add 文件名              # 只添加指定文件
 
     git add .                   # 添加全部改动（慎用，先确认 status，不要添加日志、密钥等文件）
-    ```
+    \`\`\`
 
 5. **将改动的代码提交到本地仓库的task1分支中**
 
-    ```
+    \`\`\`
     git commit -m "feat: 完成商品列表接口"
-    ```
+    \`\`\`
 
     -m 后面跟的是提交记录，是给自己和同事看的，描述请用“做了什么”，而非“正在做什么”。
 
@@ -103,9 +103,9 @@ imageUrl: '/articles/study/2025-09-20/创建pr完成.png'
 
 6. **推到远程仓库的task1分支中**
 
-    ```
+    \`\`\`
     git push -u origin task1    # 第一次加 -u，后续直接 git push 即可
-    ```
+    \`\`\`
     
 
 
@@ -144,17 +144,17 @@ imageUrl: '/articles/study/2025-09-20/创建pr完成.png'
 
     填写 PR 模板
 
-    ```
+    \`\`\`
     标题：feat: 商品列表接口
     描述：
     （做了什么）
-    - 完成 `/api/products` 分页接口
+    - 完成 \`/api/products\` 分页接口
     - 添加单元测试 12 条
 
     （如何验证）
-    1. `npm run test:ci` 全部通过
-    2. 访问 `http://localhost:3000/api/products?page=2` 可拿到 20 条数据
-    ```
+    1. \`npm run test:ci\` 全部通过
+    2. 访问 \`http://localhost:3000/api/products?page=2\` 可拿到 20 条数据
+    \`\`\`
 
     <div class="figure-center">
       <img src="/articles/study/2025-09-20/填写pr信息.png">
@@ -180,12 +180,12 @@ imageUrl: '/articles/study/2025-09-20/创建pr完成.png'
 
 5. **自己的分支被合并后**
 
-    ```
+    \`\`\`
     git checkout main   # 本地切换到main分支
     git pull            # 由于task1分支被合并进了main，所以本地需要拉取main分支的最新代码
     git fetch --prune   # 同步远端的分支信息（由于远端刚刚删除了task1分支，故该命令会自动删除本地的task1分支）
     git checkout -b task2  # 创建新分支进行新的功能开发，循环往复
-    ```
+    \`\`\`
 
 <br/>
-<span style="font-size: 30px; font-weight: bold;">END</span>
+<span style="font-size: 30px; font-weight: bold;">END</span>`;export{n as default};
